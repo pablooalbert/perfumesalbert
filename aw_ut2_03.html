@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario</title>
+</head>
+<body bgcolor="lightblue">
+    <h1 text align="center">Formulario de Perfumes</h1>
+    <form action="RespuestaFormulario.html" method="POST">
+            <label for="nombre">Nombre completo:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Introduce tu nombre" maxlength="100" required accesskey="n" tabindex="1">
+            <br><br>
+            <hr>
+            <label for="direccion">Dirección:</label>
+            <textarea id="direccion" name="direccion" placeholder="Introduce tu dirección" maxlength="200" required tabindex="2"></textarea>
+            <br><br>
+            <hr>
+            <label>Género:</label>
+            <input type="radio" id="masculino" name="genero" value="masculino">
+            <label for="masculino">Masculino</label>
+            <input type="radio" id="femenino" name="genero" value="femenino">
+            <label for="femenino">Femenino</label>
+            <br><br>
+            <hr>
+            <label>Tipos de perfumes favoritos:</label><br>
+            <input type="checkbox" id="dulces" name="tiposperfumes" value="dulces">
+            <label for="dulces">Dulces</label>
+            <input type="checkbox" id="frescos" name="tiposperfumes" value="frescos">
+            <label for="frescos">Frescos</label>
+            <br><br>
+            <hr>
+        <label for="frecuencia">¿Con qué frecuencia compras perfumes?</label>
+        <select id="frecuencia" name="frecuencia">
+            <option value="semanal">Semanal</option>
+            <option value="mensual">Mensual</option>
+            <option value="ocasional">Ocasional</option>
+        </select>
+        <br><br>
+        <hr>
+        <label for="marcas">Selecciona tus marcas favoritas:</label>
+        <select id="marcas" name="marcas" multiple size="2">
+            <option value="emporio">Emporio Armani</option>
+            <option value="polo">Polo</option>
+            <option value="versace">Versace</option>
+            <option value="azzaro">Azzaro</option>
+        </select>
+        <br><br>
+        <hr>
+
+        <button type="submit">Enviar</button>
+        <button type="reset">Restablecer</button>
+        <button type="button" onclick="alert('Si tienes algun problema contacta a nuestro gmail: perfumesalbert@gmail.com')">ALERTA</button>
+        <input type="hidden" name="formularioid" value="tiendaperfumes">
+    </form>
+
+    <div align="center">
+    <h2>Visita nuestras otras páginas:</h2>
+    <a href="aw_ut2_01.html">
+        <img src="principal.png" alt="Enlace al documento 1" width="100">
+    </a>
+    <a href="aw_ut2_02.html">
+        <img src="todos.png" alt="Enlace al documento 2" width="120">
+    </a>
+    </div>
+</body>
+</html>
